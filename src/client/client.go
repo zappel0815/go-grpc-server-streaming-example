@@ -6,7 +6,7 @@ import (
 	"log"
 	"math/rand"
 
-	pb "github.com/pramonow/go-grpc-server-streaming-example/src/proto"
+	pb "github.com/zappel0815/go-grpc-server-streaming-example/src/proto"
 
 	"time"
 

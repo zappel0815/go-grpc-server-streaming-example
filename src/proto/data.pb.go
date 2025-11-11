@@ -236,7 +236,7 @@ func NewStreamServiceClient(cc grpc.ClientConnInterface) StreamServiceClient {
 }
 
 func (c *streamServiceClient) FetchResponse(ctx context.Context, in *Request, opts ...grpc.CallOption) (StreamService_FetchResponseClient, error) {
-	stream, err := c.cc.NewStream(ctx, &_StreamService_serviceDesc.Streams[0], "/protobuf.StreamService/FetchResponse", opts...)
+	stream, err := c.cc.NewStream(ctx, &_StreamService_serviceDesc.Streams[0], "/grpc/protobuf.StreamService/FetchResponse", opts...)
 	if err != nil {
 		return nil, err
 	}

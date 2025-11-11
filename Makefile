@@ -7,11 +7,11 @@ protoc:
 server: protoc
 	@echo "Building server"
 	go build -o server \
-		github.com/pramonow/go-grpc-server-streaming-example/src/server
+		github.com/zappel0815/go-grpc-server-streaming-example/src/server
 
 client: protoc
 	@echo "Building client"
 	go build -o client \
-		github.com/pramonow/go-grpc-server-streaming-example/src/client
+		github.com/zappel0815/go-grpc-server-streaming-example/src/client
 
 .PHONY: client server protoc

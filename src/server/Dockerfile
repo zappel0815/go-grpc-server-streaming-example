@@ -8,7 +8,7 @@ RUN apt-get update && apt-get -y install libprotobuf-dev protobuf-compiler
 RUN go get -u -v github.com/golang/protobuf/proto
 RUN go get -u -v github.com/golang/protobuf/protoc-gen-go
 RUN go get -u -v google.golang.org/grpc
-RUN go get -u -v github.com/leonardyeoxl/go-grpc-server-streaming-example/src/proto
+RUN go get -u -v github.com/zappel0815/go-grpc-server-streaming-example/src/proto
 
 # Install protoc and zip system library
 RUN apt-get update && apt-get install -y zip && \
